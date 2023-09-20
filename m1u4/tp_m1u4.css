@@ -1,0 +1,35 @@
+h1{
+    color: blueviolet;
+    background: color-mix(in srgb, blueviolet 30%, white 70%);
+    text-align: center;
+}
+h2{
+    color: dodgerblue;
+    text-align: center;
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+}
+#series{
+    width: 30%;
+    height: 30%;
+    color: mediumseagreen;
+}
+.destacados{
+    color: rgba(241, 14, 14, 0.63);
+    width: 400px;
+    background-color: bisque;
+}
+.negrita_gris{
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(50, 235, 4);
+    font-family: monospace;
+    font-size: xx-large;
+}
