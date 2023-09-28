@@ -1,6 +1,10 @@
+body{
+    background: linear-gradient(0deg,rgba(238,228,164,0.9) 0%, rgba(76,226,138,0.4) 70%);
+    vertical-align: middle;
+}
 h1{
-    color: blueviolet;
-    background: color-mix(in srgb, blueviolet 30%, white 70%);
+    color: #3b23c2;
+    font-size: xx-large ;
     text-align: center;
 }
 h2{
@@ -8,28 +12,47 @@ h2{
     text-align: center;
 }
 h3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 20px;
 }
+
 #series{
+    color: rgb(90, 90, 90);
     width: 30%;
     height: 30%;
-    color: mediumseagreen;
+    padding: 10px;
+    box-shadow: -1px 3px 23px 5px rgba(0,0,0,0.77);
+    background: lightgreen;
+    border-radius: 50px;
 }
 .destacados{
-    color: rgba(241, 14, 14, 0.63);
+    color: rgb(90, 90, 90);
     width: 400px;
-    background-color: bisque;
 }
 .negrita_gris{
     color: rgb(90, 90, 90);
     font-weight: bold;
+    
 }
 a:hover{
     color: rgb(50, 235, 4);
     font-family: monospace;
-    font-size: xx-large;
+    font-size: xx-large; 
+}
+.foto{
+    width: 800px;
+     filter: grayscale(100%) blur(4px) opacity(68%);
+     border-radius: 100px;
+}
+.foto:hover{
+    filter: blur(0px) opacity(100%);
+    cursor: not-allowed;
+}
+.info{
+    margin-left: 5%;
+    width: 30%;
+    
 }
