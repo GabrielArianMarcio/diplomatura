@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+</head>
+
+<body style="background: beige; ">
+
+    <div style="height: 100px; width: 100px; background: aqua; "></div>
+    <div style="height: 100px; width: 100px; background: gray;"></div>
+    <div style="height: 100px; width: 100px; background: purple;"></div>
+    <div style="height: 100px; width: 100px; background: black ;"></div>
+    <div style="height: 100px; width: 100px; background: orange;"></div>
+
+    <script>
+        const fondo = document.querySelector('body');
+
+        let color = "";
+        const boton = document.getElementsByTagName('div');
+        for (let i = 0; i < boton.length; i++) {
+            boton[i].addEventListener('click', cambioFondo);
+        } 
+        function cambioFondo() {
+                fondo.style.background= this.style.background;
+            }
+    </script>
+
+</body>
+
+</html>
