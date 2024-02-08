@@ -1,9 +1,9 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import '../styles/components/pages/ContactoPage.css';
 
 const ContactoPage = (props) => {
- 
+
     const initialForm = {
         nombre: '',
         email: '',
@@ -17,7 +17,7 @@ const ContactoPage = (props) => {
     const [formData, setFormData] = useState(initialForm);
 
     const handleChange = e => {
-        const { name,value} = e.target;
+        const { name, value } = e.target;
         setFormData(oldData => ({
             ...oldData,
             [name]: value
@@ -43,20 +43,20 @@ const ContactoPage = (props) => {
                 <h2>Contacto Rapido</h2>
                 <form className="formulario" action="/contacto" method="post" onSubmit={handleSubmit}>
                     <p>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" value={formData.nombre} onchange={handleChange}/>
+                        <label htmlFor="nombre">Nombre</label>
+                        <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" value={formData.email} onchange={handleChange}/>
+                        <label htmlFor="email">Email</label>
+                        <input type="text" name="email" value={formData.email} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="telefono">Telefono</label>
-                        <input type="text" name="telefono" value={formData.telefono} onchange={handleChange}/>
+                        <label htmlFor="telefono">Telefono</label>
+                        <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" value={formData.mensaje} onchange={handleChange}></textarea>
+                        <label htmlFor="mensaje">Mensaje</label>
+                        <textarea name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
                     </p>
                     <p>
                         <input type="submit" value="Enviar" />
@@ -66,7 +66,7 @@ const ContactoPage = (props) => {
                 {msg ? <p>{msg}</p> : null}
 
             </div>
-            <div class="datos">
+            <div className="datos">
                 <h2>Otras vias de comuniacion</h2>
                 <p>Tambien puede contactarse con nosootros usadno los siguientes medios</p>
                 <ul>
